@@ -9,4 +9,4 @@
       <title>#request.pageTitle# | #this.name#</title>
     </cfoutput>
   </head>
-  <body>
+  <body class="d-flex h-100 text-center text-white bg-dark">
