@@ -1,6 +1,6 @@
 component {
 
-    this.name = "MultiSelect";
+    this.name = "Multi Select";
     this.applicationTimeout = CreateTimeSpan(10, 0, 0, 0); //10 days
     this.datasource = "cfbookclub";
     this.sessionManagement = true;
