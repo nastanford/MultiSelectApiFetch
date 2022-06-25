@@ -1,9 +1,4 @@
-<cfquery name="getAuthors" datasource="#request.datasource#">
-  select *
-  from authors
-  order by lastname,firstname
-</cfquery>
-
+<cfinclude template="queries/getAuthors.cfm">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +16,6 @@
       <option value="#authorid#">#lastname#,#firstname#</option>
     </cfoutput>
   </select>
-  <select name="books" id="books">
-  </select>
+  <select name="books" id="books"></select>
 </body>
 </html>

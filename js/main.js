@@ -1,4 +1,3 @@
-
 function getBooks(id) {
   var e = document.getElementById(id);
   var booksOption = document.getElementById("books");

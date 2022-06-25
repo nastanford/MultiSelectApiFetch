@@ -1,1 +1,0 @@
-<cfset request.datasource="cfbookclub">
