@@ -16,7 +16,7 @@
     </div>
     <div class="col-sm-3">
       <label for="author" class="form-label fw-bold">Author</label>
-      <select name="author" id="author" OnChange="getBooks(this.id)">
+      <select name="author" id="author" OnChange="updateSelect(this.id,'data/getBooks.cfm?id=','books','BOOKID','TITLE')">
         <option value=''>- - - Choose an Author - - -</option>
         <cfoutput query="getAuthors">
           <option value="#authorid#">#lastname#,#firstname#</option>
@@ -29,4 +29,6 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript" src="./js/main.js"></script>
 <cfinclude template="./includes/footer.cfm">

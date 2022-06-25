@@ -9,9 +9,7 @@
   </div>
   <div class="row mt-5">
     <div class="col-12 text-center">
-      <ul>
-        <li><a href="multiselect.cfm">Multiselect</a></li>
-      </ul>
+      <a href="multiselect.cfm">Multiselect</a>
     </div>
   </div>
 </div>

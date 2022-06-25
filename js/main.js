@@ -1,15 +1,14 @@
-function getBooks(id) {
+function updateSelect(id,url,select,value,text) {
   var e = document.getElementById(id);
-  var booksOption = document.getElementById("books");
-  fetch("data/getBooks.cfm?id=" + e.value).then(function (response) {
+  var responseOption = document.getElementById(select);
+  fetch(url + e.value).then(function (response) {
     return response.json();
-  }).then(book => {
-    var bookOption = "";
-    bookOption += "<option value=''>- - - Choose a Book - - -</option>";
-    for (let i = 0; i < book.length; i++) {
-      // console.log(book[i]);
-      bookOption += "<option value='" + book[i]['BOOKID'] + "'>" + book[i]['TITLE'] + "</option>";
+  }).then(option => {
+    var selectOption = "";
+    selectOption += "<option value=''>- - - Choose a Book - - -</option>";
+    for (let i = 0; i < option.length; i++) {
+      selectOption += "<option value='" + option[i][value] + "'>" + option[i][text] + "</option>";
     }
-    booksOption.innerHTML = bookOption;
+    responseOption.innerHTML = selectOption;
   })
 }
