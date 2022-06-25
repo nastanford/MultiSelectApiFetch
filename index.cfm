@@ -1,3 +1,4 @@
+
 <cfset request.pageTitle="CF Book Club">
 <cfinclude template="./includes/header.cfm">
 <div class="container">
@@ -7,21 +8,42 @@
     </div>
   </div>
   <div class="row mt-5">
-    <div class="col-sm-3">
-    </div>
-    <div class="col-sm-3">
-      <label for="author" class="form-label fw-bold">Author</label>
-      <select name="author" id="author" OnChange="getBooks(this.id)">
-        <option value=''>- - - Choose an Author - - -</option>
-        <cfoutput query="getAuthors">
-          <option value="#authorid#">#lastname#,#firstname#</option>
-        </cfoutput>
-      </select>
-    </div>
-    <div class="col-sm-3">
-      <label for="Books" class="form-label fw-bold">Books</label>
-      <select name="books" id="books"></select>
+    <div class="col-12 text-center">
+      <ul>
+        <li><a href="multiselect.cfm">Multiselect</a></li>
+      </ul>
     </div>
   </div>
 </div>
 <cfinclude template="./includes/footer.cfm">
+
+<!---
+<cfdbinfo type="tables" datasource="#this.datasource#" name="dbdata"> 
+
+<cfdump var="#dbdata#">
+--->
+<!---  
+Table
+===============
+AUTHORS	
+BLOGCATEGORIES	
+BLOGCOMMENTS	
+BLOGENTRIES	
+BLOGENTRIESCATEGORIES	
+BOOKS	
+CALENDAR	
+COUPONS	
+MEETINGS	
+MEMBERDOWNLOAD	
+MEMBERS	
+POLLRESPONSES	
+POLLS	
+SPONSORS
+
+Datatables
+===============
+cfartgallery  	  	 
+cfbookclub  	  	 
+cfcodeexplorer  	  	 
+cfdocexamples  
+--->
