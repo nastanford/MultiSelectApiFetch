@@ -16,34 +16,3 @@
   </div>
 </div>
 <cfinclude template="./includes/footer.cfm">
-
-<!---
-<cfdbinfo type="tables" datasource="#this.datasource#" name="dbdata"> 
-
-<cfdump var="#dbdata#">
---->
-<!---  
-Table
-===============
-AUTHORS	
-BLOGCATEGORIES	
-BLOGCOMMENTS	
-BLOGENTRIES	
-BLOGENTRIESCATEGORIES	
-BOOKS	
-CALENDAR	
-COUPONS	
-MEETINGS	
-MEMBERDOWNLOAD	
-MEMBERS	
-POLLRESPONSES	
-POLLS	
-SPONSORS
-
-Datatables
-===============
-cfartgallery  	  	 
-cfbookclub  	  	 
-cfcodeexplorer  	  	 
-cfdocexamples  
---->
