@@ -16,7 +16,7 @@
     </div>
     <div class="col-sm-3">
       <label for="author" class="form-label fw-bold">Author</label>
-      <select name="author" id="author" OnChange="updateSelect(this.id,'data/getBooks.cfm?id=','books','BOOKID','TITLE')">
+      <select name="author" id="author" OnChange="updateSelect(this.id,'data/getBooks.cfm?id=','books','BOOKID','TITLE','Book')">
         <option value=''>- - - Choose an Author - - -</option>
         <cfoutput query="getAuthors">
           <option value="#authorid#">#lastname#,#firstname#</option>
@@ -25,7 +25,11 @@
     </div>
     <div class="col-sm-3">
       <label for="Books" class="form-label fw-bold">Books</label>
-      <select name="books" id="books"></select>
+      <select name="books" id="books" OnChange="updateSelect(this.id,'data/getAuthors.cfm?id=','LIST','AUTHORID','FULLNAME','List')"></select>
+    </div>
+    <div class="col-sm-3">
+      <label for="LIST" class="form-label fw-bold">LIST</label>
+      <select name="LIST" id="LIST"></select>
     </div>
   </div>
 </div>
