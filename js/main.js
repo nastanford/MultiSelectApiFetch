@@ -1,3 +1,8 @@
+// Using this in ColdFusion 
+// Turning on debug WILL break this code even with 
+// settings set to not show debugoutput
+// Video helpful for creating this code.
+// https://www.youtube.com/watch?v=ZTQcJWixB1k
 function updateSelect(id,url,select,value,text,chooseText) {
   var e = document.getElementById(id);
   var responseOption = document.getElementById(select);
